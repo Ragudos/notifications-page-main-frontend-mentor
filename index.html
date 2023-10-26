@@ -22,13 +22,13 @@
 
   <main>
     <section class="notifications flex flex-col gap-half justify-center" aria-labelledby="notifications-title">
-      <div class="flex justify-between">
-        <h1 id="notifications-title" class="flex items-center gap-half-and-one">
+      <div class="flex-wrap flex justify-between gap-half-and-one">
+        <h1 id="notifications-title" class="flex items-center gap">
           Notifications
           <small id="unread-notifications-count" class="bg-primary-blue text-white">3</small>
         </h1>
 
-        <button type="button" id="mark-all-as-read-btn" class="text-grayblue-700 hover-text-primary-blue">
+        <button type="button" id="mark-all-as-read-btn" class="auto-min-width no-padding text-grayblue-700 hover-text-primary-blue">
           Mark all as read
         </button>
       </div>
