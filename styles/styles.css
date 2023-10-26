@@ -13,7 +13,7 @@
 
     padding: calc(var(--base-font-size) * 1.175);
 
-    background-color: hsl(var(--clr-grayblue-200) / 0.5);
+    background-color: hsl(var(--clr-grayblue-100));
 
     color: hsl(var(--clr-grayblue-700));
 }
