@@ -91,6 +91,7 @@ main {
 
 #unread-notifications-count {
     padding-inline: calc(var(--base-font-size) * 0.75);
+    padding-block: calc(var(--base-font-size) * 0.25);
 
     border-radius: calc(var(--base-font-size) * 0.25);
 }
