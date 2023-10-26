@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="preload" as="fonts" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/colors.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <script src="./scripts/app.js" defer async></script>
+</head>
+
+<body>
+
+  <main>
+    <section class="notifications flex flex-col gap-half justify-center" aria-labelledby="notifications-title">
+      <div class="flex justify-between">
+        <h2 id="notifications-title" class="flex items-center gap-half-and-one">
+          Notifications
+          <span id="unread-notifications-count" class="bg-primary-blue text-white">3</span>
+        </h2>
+
+        <button type="button" id="mark-all-as-read-btn" class="text-grayblue-700 hover-text-primary-blue">
+          Mark all as read
+        </button>
+      </div>
+
+      <ul class="list-of-notifications flex flex-col gap-half">
+        <li data-id="Mark Webber" class="notification-card flex gap justify-between">
+          <div class="profile-image">
+            <img loading="eager" decoding="async" src="./assets/images/avatar-mark-webber.webp"
+              alt="Mark Webber's Profile Picture" width="48" height="48" />
+          </div>
+
+          <div class="flex-1 flex flex-col gap">
+            <div class="flex flex-col gap-quarter">
+              <div>
+                <a href="javascript:;" class="auto-min-height no-padding hover-text-primary-blue">
+                  <strong>
+                    Mark Webber
+                  </strong>
+                </a>
+                reacted to your recent post
+                <a class="auto-min-height no-padding hover-text-primary-blue">
+                  <strong>
+                    My first tournament today!
+                  </strong>
+                </a>
+
+                <span class="active-status" data-read="false"></span>
+              </div>
+              <span class="time">1m ago</span>
+            </div>
+
+            <div class="flex gap-half items-center" style="margin-top: 4px;">
+              <small>
+                <button data-mark-notification-as-read="true" data-controls="Mark Webber" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as read
+                </button>
+              </small>
+
+              <small>
+                <button data-mark-notification-as-unread="true" data-controls="Mark Webber" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as unread
+                </button>
+              </small>
+            </div>
+          </div>
+        </li>
+
+        <li data-id="Angela Gray" data-read="false" class="notification-card flex gap justify-between">
+          <div class="profile-image">
+            <img loading="eager" decoding="async" src="./assets/images/avatar-angela-gray.webp"
+              alt="Angela Gray's Profile Picture" width="48" height="48" />
+          </div>
+
+          <div class="flex-1 flex flex-col gap">
+            <div class="flex flex-col gap-quarter">
+              <div>
+                <a href="javascript:;" class="auto-min-height profile-name no-padding hover-text-primary-blue">
+                  <strong>
+                    Angela Gray
+                  </strong>
+                </a>
+                followed you
+
+                <span class="active-status" data-read="false"></span>
+              </div>
+              <span class="time">5m ago</span>
+            </div>
+
+            <div class="flex gap-half items-center" style="margin-top: 4px;">
+              <small>
+                <button data-mark-notification-as-read="true" data-controls="Angela Gray" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as read
+                </button>
+              </small>
+
+              <small>
+                <button data-mark-notification-as-unread="true" data-controls="Angela Gray" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as unread
+                </button>
+              </small>
+            </div>
+          </div>
+        </li>
+
+        <li data-id="Jacob Thompson" data-read="false" class="notification-card flex gap justify-between">
+          <div class="profile-image">
+            <img loading="eager" decoding="async" src="./assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob Thompson's Profile Picture" width="48" height="48" />
+          </div>
+
+          <div class="flex flex-1 flex-col gap">
+            <div class="flex flex-col gap-quarter">
+              <div>
+                <a href="javascript:;" class="auto-min-height  no-padding hover-text-primary-blue">
+                  <strong>
+                    Jacob Thompson
+                  </strong>
+                </a>
+                has joined your group
+
+                <a class="no-padding auto-min-height text-primary-blue">
+                  <strong>
+                    Chess Club
+                  </strong>
+                </a>
+
+                <span class="active-status" data-read="false"></span>
+              </div>
+
+              <span class="time">1 day ago</span>
+            </div>
+
+            <div class="flex gap-half items-center" style="margin-top: 4px;">
+              <small>
+                <button data-mark-notification-as-read="true" data-controls="Jacob Thompson" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as read
+                </button>
+              </small>
+
+              <small>
+                <button data-mark-notification-as-unread="true" data-controls="Jacob Thompson" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as unread
+                </button>
+              </small>
+            </div>
+          </div>
+        </li>
+
+        <li data-id="Rizky Hasanuddin" data-read="false" class="notification-card flex gap justify-between">
+          <div class="profile-image">
+            <img loading="eager" decoding="async" src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin's Profile Picture" width="48" height="48" />
+          </div>
+          <div class="flex-1 flex-col flex gap">
+            <div class="flex flex-col gap-quarter">
+              <div>
+                <a href="javascript:;" class="auto-min-height no-padding hover-text-primary-blue">
+                  <strong>
+                    Rizky Hasanuddin
+                  </strong>
+                </a>
+                sent you a private message
+
+                <span class="active-status"></span>
+              </div>
+              <span class="time">5 days ago</span>
+            </div>
+
+            <a href="javascript:;" class="message-sent auto-min-height">
+              <p>
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                I'm already having lots of fun and improving my game.
+              </p>
+            </a>
+
+            <div class="flex gap-half items-center" style="margin-top: 4px;">
+              <small>
+                <button data-mark-notification-as-read="true" data-controls="Rizky Hasanuddin" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as read
+                </button>
+              </small>
+
+              <small>
+                <button data-mark-notification-as-unread="true" data-controls="Rizky Hasanuddin" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as unread
+                </button>
+              </small>
+            </div>
+          </div>
+        </li>
+
+        <li data-id="Kimberly Smith" data-read="false" class="notification-card">
+          <div class="flex gap justify-between">
+            <div class="profile-image">
+              <img loading="eager" decoding="async" src="./assets/images/avatar-kimberly-smith.webp"
+                alt="Kimberly Smith's Profile Picture" width="48" height="48" />
+            </div>
+            <div class="flex-1 flex-col flex gap">
+              <div class="flex flex-col gap-quarter">
+                <div>
+                  <a href="javascript:;" class="auto-min-height no-padding hover-text-primary-blue">
+                    <strong>
+                      Kimberly Smith
+                    </strong>
+                  </a>
+                  commented on your picture
+
+                  <span class="active-status"></span>
+                </div>
+                <span class="time">1 week ago</span>
+              </div>
+
+              <div class="flex gap-half items-center" style="margin-top: 4px;">
+                <small>
+                  <button data-mark-notification-as-read="true" data-controls="Kimberly Smith" type="button"
+                    style="opacity: 0.87; font-size: inherit;"
+                    class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                    Mark as read
+                  </button>
+                </small>
+  
+                <small>
+                  <button data-mark-notification-as-unread="true" data-controls="Kimberly Smith" type="button"
+                    style="opacity: 0.87; font-size: inherit;"
+                    class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                    Mark as unread
+                  </button>
+                </small>
+              </div>
+            </div>
+
+            <a class="no-padding auto-min-height auto-min-width"
+              style="width: calc(var(--base-font-size) * 3); height: calc(var(--base-font-size) * 3);">
+
+              <img loading="eager" decoding="async" src="./assets/images/image-chess.webp"
+                alt="My Profile Picture in Chess" width="48" height="48" />
+            </a>
+          </div>
+        </li>
+
+        <li data-id="Nathan Peterson" data-read="false" class="notification-card flex gap justify-between">
+          <div class="profile-image">
+            <img loading="eager" decoding="async" src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson's Profile Picture" width="48" height="48" />
+          </div>
+
+          <div class="flex flex-1 flex-col gap">
+            <div class="flex flex-col gap-quarter">
+              <div>
+                <a href="javascript:;" class="auto-min-height no-padding hover-text-primary-blue">
+                  <strong>
+                    Nathan Peterson
+                  </strong>
+                </a>
+                reacted to your recent post
+
+                <a class="no-padding auto-min-height hover-text-primary-blue text-grayblue-700">
+                  <strong>
+                    5 end-game strategies to increase your win rate
+                  </strong>
+                </a>
+
+                <span class="active-status"></span>
+              </div>
+
+              <span class="time">2 weeks ago</span>
+            </div>
+
+            <div class="flex gap-half items-center" style="margin-top: 4px;">
+              <small>
+                <button data-mark-notification-as-read="true" data-controls="Nathan Peterson" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as read
+                </button>
+              </small>
+
+              <small>
+                <button data-mark-notification-as-unread="true" data-controls="Nathan Peterson" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as unread
+                </button>
+              </small>
+            </div>
+          </div>
+        </li>
+
+
+        <li data-id="Anna Kim" data-read="false" class="notification-card flex gap justify-between">
+          <div class="profile-image">
+            <img loading="eager" decoding="async" src="./assets/images/avatar-anna-kim.webp"
+              alt="Anna Kim's Profile Picture" width="48" height="48" />
+          </div>
+
+          <div class="flex flex-1 flex-col gap">
+            <div class="flex flex-col gap-quarter">
+              <div>
+                <a href="javascript:;" class="auto-min-height  no-padding hover-text-primary-blue">
+                  <strong>
+                    Anna Kim
+                  </strong>
+                </a>
+                left the group
+
+                <a class="no-padding auto-min-height text-primary-blue text-grayblue-700">
+                  <strong>
+                    Chess Club
+                  </strong>
+                </a>
+
+                <span class="active-status"></span>
+              </div>
+
+              <span class="time">2 weeks ago</span>
+            </div>
+
+            <div class="flex gap-half items-center" style="margin-top: 4px;">
+              <small>
+                <button data-mark-notification-as-read="true" data-controls="Anna Kim" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as read
+                </button>
+              </small>
+
+              <small>
+                <button data-mark-notification-as-unread="true" data-controls="Anna Kim" type="button"
+                  style="opacity: 0.87; font-size: inherit;"
+                  class="auto-min-height no-padding text-grayblue-600 hover-text-primary-blue">
+                  Mark as unread
+                </button>
+              </small>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!--
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

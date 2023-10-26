@@ -1,0 +1,79 @@
+.bg-grayblue-100 {
+    background-color: hsl(var(--clr-grayblue-100));
+}
+
+.text-grayblue-100 {
+    color: hsl(var(--clr-grayblue-100));
+}
+
+.bg-grayblue-200 {
+    background-color: hsl(var(--clr-grayblue-200));
+}
+
+.text-grayblue-200 {
+    color: hsl(var(--clr-grayblue-200));
+}
+
+.bg-grayblue-300 {
+    background-color: hsl(var(--clr-grayblue-300));
+}
+
+.text-grayblue-300 {
+    color: hsl(var(--clr-grayblue-300));
+}
+
+.bg-grayblue-600 {
+    background-color: hsl(var(--clr-grayblue-600));
+}
+
+.text-grayblue-600 {
+    color: hsl(var(--clr-grayblue-600));
+}
+
+.bg-grayblue-700 {
+    background-color: hsl(var(--clr-grayblue-700));
+}
+
+.text-grayblue-700 {
+    color: hsl(var(--clr-grayblue-700));
+}
+
+.bg-grayblue-800 {
+    background-color: hsl(var(--clr-grayblue-800));
+}
+
+.text-grayblue-800 {
+    color: hsl(var(--clr-grayblue-800));
+}
+
+.text-white {
+    color: hsl(var(--clr-white));
+}
+
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.text-black {
+    color: black;
+}
+
+.text-primary-blue {
+    color: hsl(var(--clr-primary-blue));
+}
+
+.hover-text-primary-blue:hover {
+    color: hsl(var(--clr-primary-blue));
+}
+
+.bg-primary-blue {
+    background-color: hsl(var(--clr-primary-blue));
+}
+
+.hover-text-primary-red:hover {
+    color: hsl(var(--clr-primary-red));
+}
+
+.bg-primary-red {
+    background-color: hsl(var(--clr-primary-red));
+}
