@@ -5,7 +5,7 @@
 
 .notification-card {
     text-align: start;
-    border-radius: calc(var(--base-font-size) * 0.5);
+    border-radius: calc(var(--base-border-radius) * 0.5);
 
     padding: calc(var(--base-font-size) * 1.175);
 
@@ -40,7 +40,7 @@ time {
 .notifications {
     padding: calc(var(--base-font-size) * 1.75);
 
-    border-radius: var(--base-font-size);
+    border-radius: var(--base-border-radius);
 
     max-width: 675px;
 
@@ -63,7 +63,7 @@ main {
 
     padding: calc(var(--base-font-size) * 1);
 
-    border-radius: calc(var(--base-font-size) * 0.25);
+    border-radius: calc(var(--base-border-radius) * 0.25);
 }
 
 .message-sent:hover {
@@ -93,5 +93,5 @@ main {
     padding-inline: calc(var(--base-font-size) * 0.75);
     padding-block: calc(var(--base-font-size) * 0.25);
 
-    border-radius: calc(var(--base-font-size) * 0.25);
+    border-radius: calc(var(--base-border-radius) * 0.25);
 }

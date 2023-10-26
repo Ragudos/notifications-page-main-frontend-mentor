@@ -13,8 +13,6 @@
 
     --base-font-size: 16px;
     --base-border-radius: 16px;
-
-    --mobile-size: 375px;
 }
 
 *,
@@ -130,7 +128,7 @@ textarea,
 a {
     outline: var(--_outline-size) var(--_outline-style) var(--_clr-outline);
 
-    border-radius: calc(0.25em + 0.25ex);
+    padding: calc(0.25em + 0.25ex);
 
     box-shadow:
         var(--_ring-offset-size, 0 0 0 0) var(--_clr-ring-offset, transparent),
