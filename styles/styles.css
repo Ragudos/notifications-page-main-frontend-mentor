@@ -3,10 +3,6 @@
     text-align: center;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 84%);
-}
-
 .notification-card {
     text-align: start;
     border-radius: calc(var(--base-font-size) * 0.5);
